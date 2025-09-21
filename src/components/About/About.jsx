@@ -1,7 +1,6 @@
 import React from "react";
-import ReactTypingEffect from "react-typing-effect";
 import { TypeAnimation } from "react-type-animation";
-import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 import profilepicLinkedln2 from "../../assets/profile/profilepicLinkedln2.jpeg";
 const About = () => {
   const cursor = "|";
@@ -66,21 +65,95 @@ const About = () => {
 
           {/* rightside */}
           <div className="md:w-1/2 flex justify-center md:justify-end">
-            <Tilt
-              className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
-              tiltMaxAngleX={10}
-              tiltMaxAngleY={10}
-              perspective={500}
-              scale={1}
-              transitionSpeed={500}
-              gyroscope={true}
-            >
-              <img
-                src={profilepicLinkedln2}
-                alt="Tarun Kaushik"
-                className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[34rem]">
+              {/* Animated background blobs */}
+              <motion.div
+                className="absolute top-0 left-0 w-[calc(100%-3rem)] h-full mx-6"
+                style={{
+                  background: "linear-gradient(45deg, #8245ec, #a855f7)",
+                  filter: "blur(15px)",
+                  opacity: 0.4,
+                }}
+                animate={{
+                  scale: [1, 1.05, 1],
+                  borderRadius: [
+                    "55% 45% 45% 55% / 55% 45% 55% 45%",
+                    "40% 60% 55% 45% / 45% 50% 50% 55%",
+                    "55% 45% 45% 55% / 55% 45% 55% 45%",
+                  ],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
-            </Tilt>
+
+              <motion.div
+                className="relative w-full h-full"
+                whileHover={{ scale: 1.05 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 20,
+                }}
+              >
+                {/* Animated border */}
+                <motion.div
+                  className="absolute inset-0 mx-6"
+                  style={{
+                    background: "linear-gradient(45deg, #8245ec, #a855f7)",
+                    borderRadius: "55% 45% 45% 55% / 55% 45% 55% 45%",
+                  }}
+                  animate={{
+                    borderRadius: [
+                      "55% 45% 45% 55% / 55% 45% 55% 45%",
+                      "40% 60% 55% 45% / 45% 50% 50% 55%",
+                      "55% 45% 45% 55% / 55% 45% 55% 45%",
+                    ],
+                    scale: [1, 1.03, 1],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                />
+
+                {/* Image container */}
+                <motion.div
+                  className="absolute inset-0 mx-6"
+                  animate={{
+                    borderRadius: [
+                      "55% 45% 45% 55% / 55% 45% 55% 45%",
+                      "40% 60% 55% 45% / 45% 50% 50% 55%",
+                      "55% 45% 45% 55% / 55% 45% 55% 45%",
+                    ],
+                  }}
+                  transition={{
+                    duration: 6,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 bg-purple-300"
+                    style={{ borderRadius: "inherit" }}
+                  />
+                  <div
+                    className="relative w-full h-full overflow-hidden p-1"
+                    style={{ borderRadius: "inherit" }}
+                  >
+                    <img
+                      src={profilepicLinkedln2}
+                      alt="Priyanka Dandapat"
+                      className="w-full h-full object-cover"
+                      style={{ borderRadius: "inherit" }}
+                    />
+                  </div>
+                </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
