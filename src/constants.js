@@ -32,3 +32,50 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import csharpLogo from "./assets/tech_logo/csharp.png";
+
+export const SkillsInfo = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "HTML", logo: htmlLogo },
+      { name: "CSS", logo: cssLogo },
+      { name: "SASS", logo: sassLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "React JS", logo: reactjsLogo },
+      { name: "Redux", logo: reduxLogo },
+      { name: "Tailwind CSS", logo: tailwindcssLogo },
+      { name: "Bootstrap", logo: bootstrapLogo },
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Dotnet", logo: springbootLogo },
+      { name: "Node JS", logo: nodejsLogo },
+      { name: "Express JS", logo: expressjsLogo },
+      { name: "MySQL", logo: mysqlLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "MySQL", logo: postgreLogo },
+    ],
+  },
+  {
+    title: "Languages",
+    skills: [
+      { name: "Java", logo: javaLogo },
+      { name: "C-Sharp", logo: csharpLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "TypeScript", logo: typescriptLogo },
+    ],
+  },
+  {
+    title: "Tools",
+    skills: [
+      { name: "Git", logo: gitLogo },
+      { name: "GitHub", logo: githubLogo },
+      { name: "VS Code", logo: vscodeLogo },
+      { name: "Postman", logo: postmanLogo },
+      { name: "Compass", logo: mcLogo },
+      { name: "Vercel", logo: vercelLogo },
+    ],
+  },
+];
