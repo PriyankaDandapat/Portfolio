@@ -32,6 +32,8 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import csharpLogo from "./assets/tech_logo/csharp.png";
+import ramcoLogo from "./assets/company_logo/ramcoLogo.png";
+import ethnusLogo from "./assets/company_logo/ethnusLogo.png";
 
 export const SkillsInfo = [
   {
@@ -76,6 +78,45 @@ export const SkillsInfo = [
       { name: "Postman", logo: postmanLogo },
       { name: "Compass", logo: mcLogo },
       { name: "Vercel", logo: vercelLogo },
+    ],
+  },
+];
+export const experiences = [
+  {
+    id: 0,
+    img: ramcoLogo,
+    role: "Fullstack Developer",
+    company: "Webverse Digital",
+    date: "April 2024 - Present",
+    desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React JS",
+      "TypeScript",
+      "Node JS",
+      "Tailwind CSS",
+      "MongoDb",
+      "Redux",
+      " Next Js",
+    ],
+  },
+  {
+    id: 1,
+    img: ethnusLogo,
+    role: "Fullstack Engineer",
+    company: "Agumentik Group of Companies",
+    date: "July 2023 - March 2024",
+    desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
+    skills: [
+      "ReactJS",
+      "Redux",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "SQL",
     ],
   },
 ];
