@@ -32,6 +32,8 @@ import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import csharpLogo from "./assets/tech_logo/csharp.png";
+import ramcoLogo from "./assets/company_logo/ramcoLogo.png";
+import ethnusLogo from "./assets/company_logo/ethnusLogo.png";
 
 export const SkillsInfo = [
   {
@@ -76,6 +78,53 @@ export const SkillsInfo = [
       { name: "Postman", logo: postmanLogo },
       { name: "Compass", logo: mcLogo },
       { name: "Vercel", logo: vercelLogo },
+    ],
+  },
+];
+export const experiences = [
+  {
+    id: 0,
+    img: ramcoLogo,
+    role: "Software Developer 1",
+    company: "Ramco Systems",
+    date: "February 2025 - Present",
+    desc: "As a Software Developer - 1 at Ramco Systems , I built 10+ reusable React components for a low-code UI platform, enhanced existing components like Dropdown and DatePicker to improve functionality by 30%, and implemented ARIA accessibility to boost usability by 20%. I leveraged GitHub Copilot to accelerate development by 30%, integrated libraries like Ant Design and Bryntum Scheduler, and optimized runtime performance for seamless subsystem integration. On the backend, I developed 8+ RESTful APIs using .NET, C#, CQRS, achieving 92%+ unit test coverage, and implemented 10+ RESTful APIs in MERN applications, rendering secure, dynamic data tables in React. This role strengthened my skills in frontend component design, API development, debugging, testing, and performance optimization in an agile enterprise environment.",
+    skills: [
+      "React.js",
+      "React Testing Library",
+      "Agile Development",
+      ".NET Framework",
+      "C#",
+      "CQRS",
+      "Dependency Injection",
+      "Postman",
+      "xUnit Testing",
+      "Unit Testing & Code Coverage",
+      "RESTful API Development",
+      "MongoDB",
+      "ExpressJs",
+      "NodeJs",
+      "SDLC Collaboration",
+    ],
+  },
+  {
+    id: 1,
+    img: ethnusLogo,
+    role: "Fullstack Internship",
+    company: "Ethnus",
+    date: "July 2023 - March 2024",
+    desc: "Developed a Hospital Management System featuring profile creation, data updates, and doctor appointment booking. I built an interactive frontend using ReactJS and Bootstrap, implemented backend services and RESTful APIs with Node.js and Express.js, and used MongoDB for data storage. I integrated JWT authentication for secure access, employed React Router DOM for smooth navigation, and implemented role-based access control to ensure appropriate permissions for admins, doctors, and patients, enhancing both security and user management.",
+    skills: [
+      "ReactJS",
+      "MongoDB",
+      "ExpressJs",
+      "NodeJs",
+      "Bootstrap",
+      "JavaScript",
+      "JWT Authentication",
+      "RESTful API development",
+      "HTML",
+      "CSS",
     ],
   },
 ];
