@@ -16,7 +16,7 @@ const Experience = () => {
         </p>
       </div>
       {/* Experience Timeline */}
-      <div className="relative max-w-5xl mx-auto">
+      <div className="relative max-w-7xl mx-auto">
         {/* Vertical Timeline Line */}
         <div className="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-[#8245ec]"></div>
 
@@ -30,8 +30,8 @@ const Experience = () => {
           >
             {/* Timeline Node with Company Logo */}
             <div className="absolute left-0 sm:left-1/2 transform -translate-x-4 sm:-translate-x-1/2 z-20">
-              <div className="relative w-20 h-20 rounded-full p-1 bg-gradient-to-r from-purple-500 to-[#8245ec] animate-pulse">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-[#8245ec] animate-spin"></div>
+              <div className="relative w-20 h-20 rounded-full p-1 bg-[#8245ec] ">
+                <div className="absolute inset-0 rounded-full bg-[#8245ec] "></div>
                 <div className="relative w-full h-full rounded-full bg-gray-900 p-2 backdrop-blur-sm">
                   <img
                     src={experience.img}
@@ -46,14 +46,28 @@ const Experience = () => {
             <div
               className={`w-[calc(100%-3rem)] sm:w-[calc(50%-4rem)] ml-16 sm:ml-0 ${
                 index % 2 === 0 ? "sm:mr-auto" : "sm:ml-auto"
-              }`}
+              } transition-all duration-300 group`}
             >
-              <div className="relative overflow-hidden rounded-2xl group">
+              <div
+                className={`relative overflow-hidden rounded-2xl transform transition-all duration-300 
+                group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(130,69,236,0.5)] group-hover:-translate-y-2
+                ${
+                  index % 2 === 0
+                    ? "group-hover:-translate-x-4"
+                    : "group-hover:translate-x-4"
+                }`}
+              >
                 {/* Animated border gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-[#8245ec] rounded-2xl opacity-50"></div>
+                <div
+                  className="absolute inset-0 bg-gradient-to-r from-purple-500 to-[#8245ec] rounded-2xl opacity-50 
+                  transition-opacity duration-300 group-hover:opacity-70"
+                ></div>
 
                 {/* Content */}
-                <div className="relative m-[1px] bg-gray-900 rounded-2xl p-6 backdrop-blur-md">
+                <div
+                  className="relative m-[1px] bg-gray-900 rounded-2xl p-6 backdrop-blur-md 
+                  transition-all duration-300 group-hover:p-7"
+                >
                   <div className="space-y-4">
                     {/* Header */}
                     <div>
