@@ -16,7 +16,7 @@ const Experience = () => {
         </p>
       </div>
       {/* Experience Timeline */}
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-6xl mx-auto">
         {/* Vertical Timeline Line */}
         <div className="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-purple-500 to-[#8245ec]"></div>
 
