@@ -48,6 +48,11 @@ import cmLogo from "./assets/work_logo/cm.png";
 import imagesearchLogo from "./assets/work_logo/image_search.png";
 import removebgLogo from "./assets/work_logo/remove_bg.png";
 
+//education section
+import aps from "./assets/education_logo/aps.jpg";
+import podarlogo from "./assets/education_logo/podarlogo.png";
+import vitlogo from "./assets/education_logo/vitlogo.png";
+
 export const SkillsInfo = [
   {
     title: "Frontend",
@@ -242,5 +247,35 @@ export const projects = [
     tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
     github: "https://github.com/codingmastr/Image-Background-Remover",
     webapp: "https://removeyourbg.netlify.app/",
+  },
+];
+
+export const education = [
+  {
+    id: 0,
+    img: vitlogo,
+    school: "Vellore Institute of Technology, Chennai",
+    date: "June 2021 - June 2025",
+    grade: "8.57 CGPA",
+    desc: "I have completed my B.Tech in Computer Science and Engineering from Vellore Institute of Technology (VIT), Chennai, where I built a strong foundation in programming, software development, and core computer science principles. My coursework included Data Structures, Algorithms, Object-Oriented Programming, Computer Networks, Operating Systems, Database Management Systems, Web Development, and Software Engineering, which strengthened both my theoretical and practical understanding. I actively participated in clubs, events, and workshops, gaining valuable skills in event management, time management, and creative design as a member of the Enactus creative team. These experiences, along with exposure to diverse technical activities, played a pivotal role in enhancing my technical expertise, problem-solving abilities, and overall professional growth.",
+    degree: "B.Tech in Computer Science and Engineering ",
+  },
+  {
+    id: 1,
+    img: aps,
+    school: "Ahmedabad Public School International, Ahmedabad",
+    date: "March 2020 - March 2021",
+    grade: "88.66%",
+    desc: "I completed my class 12 education from Ahmedabad Public School International, Ahmedabad, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
+    degree: "CBSE(XII) - PCM with Computer Science",
+  },
+  {
+    id: 2,
+    img: podarlogo,
+    school: "Podar International School, Ahmedabad",
+    date: "March 2018 - March 2019",
+    grade: "90.1%",
+    desc: "I completed my class 10 education from Podar International School, Ahmedabad, under the CBSE board.",
+    degree: "CBSE(X)",
   },
 ];

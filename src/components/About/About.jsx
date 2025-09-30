@@ -9,11 +9,11 @@ const About = () => {
     <>
       <section
         id="about"
-        className="py-0.5 px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+        className="py-0.5 px-4 sm:px-8 md:px-12 lg:px-16 max-w-7xl mx-auto font-sans mt-16 md:mt-10 lg:mt-16"
       >
-        <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
           {/* leftside */}
-          <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+          <div className="md:w-3/5 text-center md:text-left mt-8 md:mt-0">
             {/* greeting */}
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-2 leading-tight">
               Hi, I am
@@ -65,7 +65,7 @@ const About = () => {
           </div>
 
           {/* rightside */}
-          <div className="md:w-1/2 flex justify-center md:justify-end">
+          <div className="md:w-2/5 flex justify-center md:justify-end">
             <Tilt
               className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
               tiltMaxAngleX={10}
