@@ -93,7 +93,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-white font-medium">Email</h4>
-                <p className="text-gray-400">priyanka.dandapat@gmail.com</p>
+                <p className="text-gray-400">priyanka.dandapat8@gmail.com</p>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-white font-medium">Location</h4>
-                <p className="text-gray-400">Mathura, Uttar Pradesh</p>
+                <p className="text-gray-400">Chennai, Tamil Nadu</p>
               </div>
             </div>
 
@@ -135,7 +135,7 @@ const Contact = () => {
               <div className="flex space-x-4">
                 {/* GitHub */}
                 <a
-                  href="https://github.com/YourGitHub"
+                  href="https://github.com/PriyankaDandapat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center hover:bg-purple-500/20 transition-colors"
@@ -151,7 +151,7 @@ const Contact = () => {
                 </a>
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/in/YourLinkedIn"
+                  href="https://www.linkedin.com/in/priyanka-dandapat-ba9149238/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center hover:bg-purple-500/20 transition-colors"
@@ -167,7 +167,7 @@ const Contact = () => {
                 </a>
                 {/* LeetCode */}
                 <a
-                  href="https://leetcode.com/YourLeetCode"
+                  href="https://leetcode.com/u/priyankadandapat8/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center hover:bg-purple-500/20 transition-colors"

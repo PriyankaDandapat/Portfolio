@@ -13,11 +13,22 @@ const Navbar = () => {
     { id: "work", label: "Work" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
+    { id: "contact", label: "Contact" },
   ];
 
   const handleMenuItemClick = (itemId) => {
     setActiveMenuItem(itemId);
     setIsOpen(false);
+    const section = document.getElementById(itemId);
+    if (section) {
+      const navHeight = 80; // approximate height of your navbar
+      const targetPosition =
+        section.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   useEffect(() => {

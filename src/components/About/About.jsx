@@ -9,7 +9,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="py-0.5 px-4 sm:px-8 md:px-12 lg:px-16 max-w-7xl mx-auto font-sans mt-16 md:mt-10 lg:mt-16"
+        className="py-12 px-4 sm:px-8 md:px-12 lg:px-16 max-w-7xl mx-auto font-sans"
       >
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8">
           {/* leftside */}

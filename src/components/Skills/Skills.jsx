@@ -3,7 +3,7 @@ import { SkillsInfo } from "../../constants";
 const Skills = () => {
   return (
     <section
-      id="skill"
+      id="skills"
       className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-8 md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
     >
       {/* Section Title */}
