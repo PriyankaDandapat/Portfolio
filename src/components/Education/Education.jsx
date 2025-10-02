@@ -52,7 +52,7 @@ const Education = () => {
                   </h3>
 
                   {/* Degree */}
-                  <h4 className="text-xl text-purple-400 font-medium">
+                  <h4 className="text-lg text-purple-400 font-medium">
                     {item.degree}
                   </h4>
 
@@ -95,7 +95,7 @@ const Education = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-300 text-base leading-relaxed">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
