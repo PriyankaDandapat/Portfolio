@@ -41,12 +41,18 @@ const About = () => {
             </h3>
 
             {/* about me paragraph */}
-            <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              necessitatibus adipisci, libero debitis fuga unde illo, rem
-              sapiente illum quae ipsum omnis numquam accusamus perferendis
-              architecto possimus, quidem odio nisi harum ipsam sunt repellendus
-              aut.
+            <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-4 mt-8 leading-relaxed">
+              I am a Software Developer with hands-on experience in building
+              robust, scalable web applications and reusable UI components.
+              Proficient in ReactJS, NodeJS, .NET, and RESTful API development,
+              I focus on delivering efficient, maintainable solutions supported
+              by strong debugging, optimization, and comprehensive testing
+              practices with high code coverage. My expertise spans full-stack
+              development, cloud technologies (AWS), and modern tools such as
+              Git, Vite, and Postman. I am passionate about crafting intuitive
+              user interfaces, secure backend services, and performance-driven,
+              enterprise-grade solutions that uphold both technical excellence
+              and business value.
             </p>
 
             {/* resume button */}

@@ -47,6 +47,7 @@ import webverLogo from "./assets/work_logo/web_dig.png";
 import cmLogo from "./assets/work_logo/cm.png";
 import imagesearchLogo from "./assets/work_logo/image_search.png";
 import removebgLogo from "./assets/work_logo/remove_bg.png";
+import realestate_website from "./assets/work_logo/realestate_website.png";
 
 //education section
 import aps from "./assets/education_logo/aps.jpg";
@@ -151,10 +152,10 @@ export const experiences = [
 export const projects = [
   {
     id: 0,
-    title: "GitHub Profile Detective",
+    title: "Real Estate Website",
     description:
       "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-    image: githubdetLogo,
+    image: realestate_website,
     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
     github:
       "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
